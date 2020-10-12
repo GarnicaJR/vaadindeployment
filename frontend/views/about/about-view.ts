@@ -14,7 +14,8 @@ export class AboutView extends LitElement {
   render() {
     return html`
       <br />
-      Content placeholder
+      Simple demo to show how to deploy a vaadin into Apps from Digital Ocean,
+      <a href="https://github.com/GarnicaJR/vaadindeployment"> Github link</a>
     `;
   }
 }
