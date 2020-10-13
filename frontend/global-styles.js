@@ -16,6 +16,7 @@ $_documentContainer.innerHTML = `
   <style>
     html {
       overflow:hidden;
+      
     }
   </style>
 </custom-style>
@@ -23,6 +24,10 @@ $_documentContainer.innerHTML = `
 <dom-module id="app-layout" theme-for="vaadin-app-layout">
   <template>
     <style>
+      :host{
+        background-color: #f9f9f9;
+      }
+
       :host(:not([dir='rtl']):not([overlay])) [part='drawer'] {
         border-right: none;
         box-shadow: var(--lumo-box-shadow-s);

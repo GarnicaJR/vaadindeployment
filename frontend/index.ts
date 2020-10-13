@@ -20,7 +20,7 @@ const routes = [
 			action: async () => { await import ('./views/myportal/myportal-view'); }
 		},
 		{
-			path: 'portal',
+			path: 'shortener',
 			component: 'myportal-view', 
 			action: async () => { await import ('./views/myportal/myportal-view'); }
 		},

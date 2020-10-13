@@ -19,7 +19,7 @@ export class MainView extends LitElement {
   @property({ type: Object }) location = router.location;
 
   @property({ type: Array }) menuTabs: MenuTab[] = [
-    {route: 'portal', name: 'myportal'},
+    {route: 'shortener', name: 'Shortener'},
     {route: 'about', name: 'About'},
   ];
 
@@ -100,6 +100,9 @@ export class MainView extends LitElement {
         hr {
           margin: 0;
         }
+
+
+        
       `,
     ];
   }
@@ -142,7 +145,7 @@ export class MainView extends LitElement {
   connectedCallback() {
     super.connectedCallback();
     window.addEventListener('vaadin-router-location-changed', this._routerLocationChanged);
-    this.projectName = 'MSR';
+    this.projectName = 'My App';
   }
 
   disconnectedCallback() {
@@ -171,7 +174,7 @@ export class MainView extends LitElement {
     if (currentTab) {
       tabName = currentTab.name;
     } else {
-      tabName = 'myportal';
+      tabName = 'shortener';
     }
     return tabName;
   }
